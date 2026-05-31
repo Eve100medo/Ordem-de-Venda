@@ -1,0 +1,13 @@
+managed;// implementation in class zbp_i_cds_calend unique;
+//strict ( 2 );
+
+define behavior for ZI_CDS_CALEND //alias <alias_name>
+persistent table zebg_calend_sin
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,75 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {typeName: 'Calendarição', typeNamePlural: 'Calendarizações',
+title: { type: #STANDARD, label: 'isdslsdocschedln', value: 'salesdocument' } } }
+annotate view ZC_CALEND
+    with 
+{
+
+    @UI.facet: [{
+        id: 'geral',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE, //Sessão padrão na pagina de detalhes
+        label: 'Tela de detalhes', // Título que vai ser exibido na tela do usuário
+        position: 10 
+    } ]
+
+
+    @UI:{ 
+    lineItem: [ { position:10} ],
+    identification :[ { position: 10, label: ' Numero_do_Documento' } ],
+    selectionField: [ { position: 10 } ]
+    }
+    Salesdocument;
+    
+    @UI:{ 
+    lineItem: [ { position:20} ],
+    identification :[ { position: 20, label: 'Item de documento de vendas' } ]
+    }
+    Salesdocumentitem;
+
+    @UI:{ 
+    lineItem: [ { position:30} ],
+    identification :[ { position: 30, label: 'N°Div.Remessa do Documento' } ]
+    }
+    Scheduleline;
+    
+    @UI:{ 
+    lineItem: [ { position:40} ],
+    identification :[ { position: 40, label: 'Data da Calendarização' } ]
+    }
+    Deliverydate;
+    @UI:{ 
+    lineItem: [ { position:50} ],
+    identification :[ { position: 50, label: 'Remessa' } ]
+    }
+    Deliverydocument;
+    @UI:{ 
+    lineItem: [ { position:60} ],
+    identification :[ { position: 60, label: 'Data da Remessa' } ]
+    }
+    
+    Creationdate;
+    @UI:{ 
+    lineItem: [ { position:70} ],
+    identification :[ { position: 70, label: 'Codigo de Bloqueio' } ]
+    }
+    Delivblockreasonforschedline;
+    @UI:{ 
+    lineItem: [ { position:80} ],
+    identification :[ { position: 80, label: 'Quantidade na Remessa' } ]
+    }
+    Quantityinbaseunit;
+    @UI:{ 
+    lineItem: [ { position:90} ],
+    identification :[ { position: 90, label: 'Saldo' } ]
+    }
+    Saldo;
+    @UI:{ 
+    lineItem: [ { position:100} ],
+    identification :[ { position: 100, label: 'Quantidade Remanecente' } ]
+    }
+    QtdRemanecente;
+    
+    
+    
+}

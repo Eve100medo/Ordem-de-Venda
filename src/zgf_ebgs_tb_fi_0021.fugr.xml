@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de ZGF_EBGS_TB_FI_0021</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_EBGS_TB_FI_0021TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_EBGS_TB_FI_0021</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZO_FI_0001_WRITE_DOCUMENT_02</FUNCNAME>
+     <SHORT_TEXT>Função ZO_FI_0001_WRITE_DOCUMENT_02</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>OBJECTID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-OBJECTID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TCODE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-TCODE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>UTIME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-UTIME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>UDATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-UDATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>USERNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-USERNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OBJECT_CHANGE_INDICATOR</PARAMETER>
+       <DEFAULT>&apos;U&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-CHANGE_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PLANNED_CHANGE_NUMBER</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-PLANCHNGNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PLANNED_OR_REAL_CHANGES</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-CHANGE_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NO_CHANGE_POINTERS</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDHDR-CHANGE_IND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>UPD_ICDTXT_Z0_FI_0001</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDPOS-CHNGIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>N_ZTB_FI_0021</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTB_FI_0021</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>O_ZTB_FI_0021</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTB_FI_0021</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>UPD_ZTB_FI_0021</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CDPOS-CHNGIND</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ICDTXT_Z0_FI_0001</PARAMETER>
+       <DBSTRUCT>CDTXT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>OBJECTID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Valor do objeto</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TCODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Transação, na qual foi realizada uma modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UTIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Hora da modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UDATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data de criação do documento de modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>USERNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nome usuário que modificou documento de modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OBJECT_CHANGE_INDICATOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo da modificação no objeto de aplicação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PLANNED_CHANGE_NUMBER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº para agrupar as modificações previstas</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PLANNED_OR_REAL_CHANGES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo da modificação no objeto de aplicação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_CHANGE_POINTERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo da modificação no objeto de aplicação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UPD_ICDTXT_Z0_FI_0001</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo da modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>N_ZTB_FI_0021</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Log de acesso a tabela</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_ZTB_FI_0021</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Log de acesso a tabela</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UPD_ZTB_FI_0021</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo da modificação</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ICDTXT_Z0_FI_0001</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Documentos de modificação: modificações de texto</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Calender'
+define service Zui_c_calander {
+  expose ZC_CALEND as Calendarizacao;
+}

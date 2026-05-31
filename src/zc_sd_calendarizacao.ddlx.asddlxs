@@ -1,0 +1,29 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {typeName: 'Calendarização', typeNamePlural: 'Calendarizações',
+title: { type: #STANDARD, label: 'isdslsdocschedln', value: 'salesdocument' } } }
+annotate entity ZC_SD_CALENDARIZACAO with
+{
+  @UI: { lineItem: [{ position: 10 }]  }
+  salesdocument;
+  @UI: { lineItem: [ { position: 20 } ] }
+  salesdocumentitem;
+  @UI: { lineItem: [ { position: 30 } ] }
+  scheduleline;
+  @UI: { lineItem: [ { position: 40 } ] }
+  deliverydate;
+  @UI: { lineItem: [ { position: 50 } ] }
+  deliverydocument;
+  @UI: { lineItem: [ { position: 60 } ] }
+  creationdate;
+  @UI: { lineItem: [ { position: 70 } ] }
+  delivblockreasonforschedline;
+  @UI: { lineItem: [ { position: 80 } ] }
+  quantityinbaseunit;
+  @UI: { lineItem: [ { position: 90 } ] }
+  saldo;
+  @UI: { lineItem: [ { position: 100 } ] }
+  qtd_remanecente;
+  @UI: { lineItem: [ { position: 110 } ],  selectionField:        [{ position: 10 }] }
+  salesdocumenttype;
+
+}

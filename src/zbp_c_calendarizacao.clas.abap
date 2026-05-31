@@ -1,0 +1,5 @@
+CLASS zbp_c_calendarizacao DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zc_calendarizacao.
+ENDCLASS.
+
+CLASS zbp_c_calendarizacao IMPLEMENTATION.
+ENDCLASS.

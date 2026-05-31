@@ -1,0 +1,37 @@
+@Metadata.layer:#CORE //PORQUE VAMOS EDITAR ELE
+@UI.headerInfo: { typeName : 'Ferramenta', typeNamePlural: 'Ferramentas'}
+annotate view ZEBGCDS_C_TOOLS
+    with 
+{
+
+  
+  @UI.facet: [ { 
+        id: 'geral',
+        purpose : #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Dados Gerais',
+        position: 10
+         } ]  
+    
+    
+  @UI.hidden: true  // Quando não precisamos mostrar o campo
+    Toolsid;
+    
+    @UI:{ 
+        lineItem: [ { position : 10 } ],
+        identification : [ { position : 10, label: 'Ferramenta' } ],
+        selectionField: [{ position : 10 }]}
+        @EndUserText.label: 'Nome Ferramenta'
+   
+    Toolname;
+    
+    
+    @UI:{ 
+        lineItem: [ { position : 20 } ],
+        identification : [ { position : 20, label: 'Última Modificação' } ],
+        selectionField: [{ position : 20 }] }
+        @EndUserText.label: 'Última Modificação'
+        
+    Lastchangedat;
+    
+}

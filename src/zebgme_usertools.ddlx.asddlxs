@@ -1,0 +1,42 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'Ferramenta', typeNamePlural: 'Ferramentas' }
+annotate view ZEBG_C_USERTOOLS
+    with 
+{
+@UI.facet: [ { id: 'Ferramentas', 
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Ferramentas',
+    position: 10} ]
+    
+    @UI:{lineItem: [ { position: 10 } ],
+        identification: [ { position: 10 }  ]}
+    Userid;
+    
+    @UI.hidden: true
+    Toolsid;
+    
+    @UI:{lineItem: [ { position: 20, label: 'Ferramenta' } ],
+        identification: [ { position: 20, label: 'Ferramenta' } ]}
+    @Consumption:{ valueHelpDefinition: [ {  entity:{ name: 'ZEBGCDS_FERRAMENTAS_VH', element:'Toolname'},
+                                              additionalBinding: [ { element: 'Toolsid', localElement: 'Toolsid', usage: #RESULT } ]} ] }//QUANDO PRENTENDE PREENCHER OUTRO CAMPO   
+    Toolname;
+    
+    @UI:{lineItem: [ { position: 30} ],
+        identification: [ { position: 30 }  ]}
+    @Consumption:{ valueHelpDefinition: [ {  entity:{ name: 'ZEBGCDS_FERRAMENTAS_VH', element:'ddtext '} } ]}
+    Knowledge;
+    
+    @UI:{lineItem: [ { position: 40 } ],
+        identification: [ { position: 40 }  ]}
+    @Consumption:{ valueHelpDefinition: [ {  entity:{ name: 'ZEBGCDS_FERRAMENTAS_VH', element:'ddtext '} } ]}    
+    Interest;
+    
+   @UI:{lineItem: [ { position: 50, label: 'Posso dar treinamento'} ],
+        identification: [ { position: 50, label: 'Posso dar treinamento' }  ]}
+    Training;
+    
+    @UI.hidden: true
+    Lastchangedat;
+    
+}

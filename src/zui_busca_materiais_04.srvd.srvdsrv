@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition para busca de Materiais'
+define service ZUI_BUSCA_MATERIAIS_04 {
+  expose ZEBG_CE_MATERIAIS;
+}

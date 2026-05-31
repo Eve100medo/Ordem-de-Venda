@@ -1,0 +1,49 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {typeName: 'Calendarição', typeNamePlural: 'Calendarizações',
+title: { type: #STANDARD, label: 'isdslsdocschedln', value: 'salesdocument' } } }
+annotate entity ZC_SD_CALENDARIZACAO_C with
+{
+
+  @UI.facet: [{
+        id: 'geral',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE, //Sessão padrão na pagina de detalhes
+        label: 'Tela de detalhes', // Título que vai ser exibido na tela do usuário
+        position: 10
+    } ]
+
+  @UI: { lineItem:[{ position: 10 }],
+  identification :[ { position: 10, label: ' Numero_do_Documento' } ],
+  selectionField:[{ position: 10 }] }
+  salesdocument;
+  @UI: { lineItem: [ { position: 20 } ],
+   identification :[ { position: 20, label: 'Item do Documento' } ]}
+  salesdocumentitem;
+  @UI: { lineItem: [ { position: 30 } ],
+   identification :[ { position: 30, label: 'N° Div.Remessa do Documento' } ] }
+  scheduleline;
+  @UI: { lineItem: [ { position: 40 } ],
+   identification :[ { position: 40, label: 'Data da Calendarização' } ]}
+  deliverydate;
+  @UI: { lineItem: [ { position: 50 } ],
+   identification :[ { position: 50, label: 'Remessa' } ]}
+  deliverydocument;
+  @UI: { lineItem: [ { position: 60 } ],
+   identification :[ { position: 60, label: 'Codigo de Bloqueio' } ]}
+  creationdate;
+  @UI: { lineItem: [ { position: 70 } ],
+  identification :[ { position: 70, label: 'Quantidade na Remessa' } ] }
+  delivblockreasonforschedline;
+  @UI: { lineItem: [ { position: 80 } ],
+  identification :[ { position: 80, label: 'Quantidade em unidade de base' } ] }
+  quantityinbaseunit;
+  @UI: { lineItem: [ { position: 90 } ],
+  identification :[ { position: 90, label: 'Quantidade Remanecente' } ] }
+  qtd_remanecente;
+  @UI: { lineItem: [ { position: 100 } ],
+  identification :[ { position: 100, label: 'Saldo' } ] }
+  Saldo;
+  @UI: { lineItem: [ { position: 110 } ],
+  identification :[ { position: 110, label: 'Tipo de documento de vendas' } ] }
+  salesdocumenttype;
+}

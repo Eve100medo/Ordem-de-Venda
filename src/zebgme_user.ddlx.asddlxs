@@ -1,0 +1,58 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'Usuário', typeNamePlural: 'Usuários' }
+annotate view ZC_CDS_USER
+    with 
+{
+  //@UI.facet: [ { 
+      //  id: 'Ususarios',
+        //type: #IDENTIFICATION_REFERENCE,
+       // label: 'Usuarios',
+       // position: 10 },
+    /// { 
+       // id: 'Ferramentas',
+       // purpose: #STANDARD,
+       // type: #LINEITEM_REFERENCE,
+        //label: 'Ferramentas',
+       // position: 20,
+       // targetElement: '_usertools'
+     
+    // }]   
+    
+    //@UI.selectionField: [{ position: 10 }]
+    ///@Consumption.valueHelpDefinition: [{ entity:{ name: 'ZEBG_UNIQUE_USER', element: 'Userid' } }]
+    
+    
+    @UI.facet: [ { 
+        id: 'geral',
+        purpose : #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Dados Gerais',
+        position: 10
+         } ]
+    
+    @UI:{ 
+        lineItem: [ { position : 10 } ],
+        identification : [ { position : 10, label: 'ID do Material' } ],
+        selectionField: [{ position : 10 }]}
+    UserId;
+   @UI:{ 
+        lineItem: [ { position : 20 } ],
+        identification : [ { position : 20, label: 'Email' } ],
+        selectionField: [{ position : 20 }]}
+    Email;
+    @UI:{ 
+        lineItem: [ { position : 30 } ],
+        identification : [ { position : 30, label: 'Nome Completo' } ],
+        selectionField: [{ position : 30 }]}
+    Fullname;
+    @UI:{ 
+        lineItem: [ { position : 40 } ],
+        identification : [ { position : 40, label: 'Novo' } ]}
+    Isnew;
+    @UI:{ 
+        lineItem: [ { position : 50 } ],
+        identification : [ { position : 50, label: 'Ultima Modificação' } ]}
+    Lastchangedat;
+    
+    
+}

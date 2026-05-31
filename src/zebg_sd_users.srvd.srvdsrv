@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition Users'
+define service ZEBG_SD_USERS {
+  expose ZC_CDS_USER as BaseconhecimentoUsers;
+  expose ZEBG_C_USTO as UserFerramentas;
+  expose ZC_CDS_USER as Usuario;
+}

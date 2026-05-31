@@ -1,0 +1,36 @@
+managed implementation in class zbp_ebg_i_users unique;
+strict ;
+
+define behavior for ZEBG_I_USERS  alias _users
+persistent table zebg_t_user
+lock master
+authorization master ( instance )
+etag master lastchangedat
+{
+ // create;
+  update;
+  //delete;
+
+  action (features: instance) setInactive result[1] $self;
+
+  association _user_tools { create; }
+
+  mapping for zebg_t_user corresponding;
+}
+
+define behavior for ZEBG_I_USERTOOLS alias _user_tools
+persistent table zebg_t_usertools
+lock dependent by _user
+authorization dependent by _user
+etag master lastchangedat
+{
+  update;
+  delete;
+  field ( readonly ) Userid;
+  association _user;
+
+
+
+
+  mapping for zebg_t_usertools corresponding;
+}

@@ -1,0 +1,15 @@
+managed implementation in class zbp_ebg_cds_i_tool unique;
+
+
+define behavior for ZEBG_CDS_I_TOOL //alias <alias_name>
+persistent table zebg_t_tools
+lock master
+//authorization master ( instance )
+//etag master lastchangedat
+{
+  create;
+  update;
+  delete;
+
+
+}

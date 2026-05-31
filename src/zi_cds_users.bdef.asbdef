@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_cds_users unique;
+
+
+define behavior for ZI_CDS_USERS //alias <alias_name>
+persistent table zebg_t_user
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
